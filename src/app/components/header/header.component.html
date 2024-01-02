@@ -1,0 +1,16 @@
+<p>
+    <mat-toolbar color="primary">
+        <div routerLink="/" fxLayout="row" fxLayoutAlign="start center">
+            <button mat-button class="home-button">
+                <mat-icon fontIcon="home"></mat-icon>MRP
+            </button>
+        </div>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon fontIcon="list"></mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/material">Material</button>
+            <button mat-menu-item routerLink="/product">Produto</button>
+        </mat-menu>
+    </mat-toolbar>
+</p>
